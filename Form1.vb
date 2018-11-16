@@ -1,18 +1,18 @@
 ﻿Public Class Form1
-    Public box(2) As Integer        ' BOX STATE INDICATION VALUE 5 IS OPEN AND 1 IS CLOSE STATE OF EACH BOX.
-    Public boxpara(2, 3) As Integer
-    Public cmnH As Integer = 30    'COMMON HIGHT OF BOX AT CLOSE STATE
+    Public box(2) As Integer            ' BOX STATE INDICATION VALUE 5 IS OPEN AND 1 IS CLOSE STATE OF EACH BOX.
+    Public boxpara(2, 3) As Integer     'BOXPARAMETER HOLDING ( NO OF BOX (HERE 3 BOXES), FOUR PARAMETER (X,Y,W,H) )
+    Public cmnH As Integer = 30         'COMMON HEIGHT OF BOX AT CLOSE STATE
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'INITIAL PARAMETER FOR ALL BOX
-        box(0) = 5
-        box(1) = 1
+        box(0) = 5      ' BOX STATE OPEN
+        box(1) = 1      ' BOX STATE CLOSE 
         box(2) = 1
         'BOX 1 PARAM
-        boxpara(0, 0) = 6
-        boxpara(0, 1) = 30
-        boxpara(0, 2) = 240
-        boxpara(0, 3) = 120
+        boxpara(0, 0) = 6       ' LOCATION VALUE X 
+        boxpara(0, 1) = 30      ' LOCATION VALUE Y
+        boxpara(0, 2) = 240     ' WIDTH OF BOX
+        boxpara(0, 3) = 120     ' HEIGHT OF BOX
         'BOX 2 PARAM
         boxpara(1, 0) = 6
         boxpara(1, 1) = 62
